@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+.container input[type="button"]{
+    background-color: gray;
+    border: 1px solid gray;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.container input[type="text"]{
+    background-color: black;
+    border: 1px solid gray;
+    height: 30px;
+    padding-left: 10px;
+    color: gray;
+}
+.container main{
+    margin-top: 40px;
+}
+.container main #lista li{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    position: relative;
+}
+.container main #lista li label{
+   margin-left: 10px;
+}
+.container main #lista li label.feito{
+    text-decoration: line-through;
+ }
+.container main #lista li #btnEditar{
+    position: absolute;
+    right: 10%;
+ }
+
+#modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#modal .sub-modal{
+    background-color: black;
+    border: 1px solid white;
+    width: 98vw;
+    height: 98vh;
+}
+#modal .sub-modal #titulo{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#modal .sub-modal ul{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#modal .sub-modal ul li{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+#modal .sub-modal ul li input[type="text"]{
+    border: none;
+    color: white;
+}

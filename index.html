@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To do List</h1>
+
+        <div>
+            <input type="text" id="iptText">
+            <input type="button" value="Incluir" id="iptButton">
+        </div>
+
+        <main>
+            <ul id="lista"></ul>
+            <div id="modal">
+                <div class="sub-modal">
+                    <input type="text" id="titulo" value="teste...">
+
+                    <input type="button" value="Incluir Subitem" id="Incluir Subitem">
+
+                    <ul id="subItemList"></ul>
+
+                    <input type="button" value="Salvar" id="salvar">
+                    <input type="button" value="Fechar" id="fechar">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
